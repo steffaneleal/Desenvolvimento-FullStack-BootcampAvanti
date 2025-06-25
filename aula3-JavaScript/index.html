@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 2 - HTML e CSS</title>
+
+    <!-- link -->
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+
+</head>
+<body>
+    <h2 id="titulo">Pokémon</h2>
+
+    <div id="container">
+        <div class="card" onclick="showName('Bulbasaur')">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="">
+            <h3 class="name">Bulbasaur</h3>
+        </div>
+        <div class="card" onclick="showName('Charmander')">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" alt="">
+            <h3 class="name">Charmander</h3>
+        </div>
+        <div class="card" onclick="showName('Squirtle')">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" alt="">
+            <h3 class="name">Squirtle</h3>
+        </div>
+        <div class="card" onclick="showName('Pikachu')">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="">
+            <h3 class="name">Pikachu</h3>
+        </div>
+    </div>
+
+    <script>
+        // alteração da cor do body para rosa
+        window.document.body.style.background = 'pink';
+
+        /* ALTERANDO O TEXTO
+            var tituloH2 = window.document.getElementsByClassName('titulo')[0];
+            tituloH2.innerHTML = 'Mudando texto';
+        */
+ 
+        /* FUNÇÃO PARA ADICIONAR O NOME DO POKEMON
+            function showName(name) {
+                alert('clicou no pokémon '+name);
+            }
+        */
+
+        function showName(name) {
+            var tituloH2 = window.document.getElementById('titulo');
+            tituloH2.innerHTML = 'Você clicou no pokémon ' + name;
+        }
+
+    </script>
+</body>
+</html>
