@@ -57,7 +57,7 @@ switch(dia) {
 
 
 // LAÇO DE REPETIÇÃO - WHILE
-console.log('\n\n--------------- LAÇO DE REPETIÇÃO ---------------');
+console.log('\n\n--------------- WHILE ---------------');
 let count = 1;
 
 while (count <= 4) {
@@ -67,10 +67,9 @@ while (count <= 4) {
 
 
 
-
-console.log('\n\n--------------- REPETIÇÃO ---------------');
-
 // LAÇO DE REPETIÇÃO - FOR
+console.log('\n\n--------------- FOR ---------------');
+
 for (let i = 0; i <= 4; i++) {
     console.log(`Executando `,i);
 }
@@ -100,12 +99,13 @@ console.log('Nome:', pessoa.nome + ' ' + pessoa.sobrenome);
 
 
 
-console.log('\n\n--------------- OBJETO - ARRAY ---------------');
+console.log('\n\n--------------- ARRAY ---------------');
 let animais = ['leão', 'tubarão', 'cachorro'];
 for (let i = 0; i < animais.length; i++) {
     console.log(`Animal ${i}`, animais[i]);
 }
 
+//------------------------------------------------------------------
 console.log('\npush() -> empurra um novo atributo dentro do array')
 animais.push('papagaio'); // empurra um novo atributo dentro do array
 for (let i = 0; i < animais.length; i++) {
