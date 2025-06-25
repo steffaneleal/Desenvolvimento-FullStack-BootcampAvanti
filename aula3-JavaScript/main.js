@@ -5,8 +5,11 @@ console.log('--------------- DECLARAÇÃO DE VARIÁVEIS ---------------');
 let multiplicacao = 4 * 3;
 console.log(`Multiplicação: ${multiplicacao}`);
 
+
+
+
 // CONDICIONAIS - IF/ELSE
-console.log('--------------- CONDICIONAIS - IF/ELSE ---------------');
+console.log('\n\n--------------- CONDICIONAIS - IF/ELSE ---------------');
 let nota = 7;
 
 if (nota >= 7) {
@@ -17,8 +20,11 @@ if (nota >= 7) {
     console.log("Reprovado");
 }
 
+
+
+
 // CONDICIONAIS - SWITCH CASE
-console.log('--------------- CONDICIONAIS - SWITCH CASE ---------------');
+console.log('\n\n--------------- CONDICIONAIS - SWITCH CASE ---------------');
 
 let dia = 'sabado';
 
@@ -47,8 +53,11 @@ switch(dia) {
 
 }
 
+
+
+
 // LAÇO DE REPETIÇÃO - WHILE
-console.log('--------------- LAÇO DE REPETIÇÃO ---------------');
+console.log('\n\n--------------- LAÇO DE REPETIÇÃO ---------------');
 let count = 1;
 
 while (count <= 4) {
@@ -56,7 +65,10 @@ while (count <= 4) {
     count++;
 }
 
-console.log('--------------- REPETIÇÃO ---------------');
+
+
+
+console.log('\n\n--------------- REPETIÇÃO ---------------');
 
 // LAÇO DE REPETIÇÃO - FOR
 for (let i = 0; i <= 4; i++) {
@@ -64,16 +76,19 @@ for (let i = 0; i <= 4; i++) {
 }
 
 // FUNÇÃO
-console.log('--------------- FUNÇÃO ---------------');
+console.log('\n\n--------------- FUNÇÃO ---------------');
 function soma(n1, n2) {
     let soma = n1 + n2;
     console.log('Soma: ', soma);
 }
 
+
+
+
 soma(2, 4);
 
 // OBJETO
-console.log('--------------- OBJETO ---------------');
+console.log('\n\n--------------- OBJETO ---------------');
 
 let pessoa = {
     nome: 'Steffane',
@@ -82,14 +97,42 @@ let pessoa = {
 
 console.log('Nome:', pessoa.nome + ' ' + pessoa.sobrenome);
 
-console.log('--------------- OBJETO - ARRAY');
+
+
+
+console.log('\n\n--------------- OBJETO - ARRAY ---------------');
 let animais = ['leão', 'tubarão', 'cachorro'];
-animais.push('papagaio'); //empurra um novo atributo dentro do array
-console.log('Animal 2: ', animais[1]);
-console.log('Animal 4: ', animais[3]);
+for (let i = 0; i < animais.length; i++) {
+    console.log(`Animal ${i}`, animais[i]);
+}
+
+console.log('\npush() -> empurra um novo atributo dentro do array')
+animais.push('papagaio'); // empurra um novo atributo dentro do array
+for (let i = 0; i < animais.length; i++) {
+    console.log(`Animal ${i}`, animais[i]);
+}
+
+//------------------------------------------------------------------
+console.log('\npop() -> remove o último atributo dentro do array');
 
 animais.pop(); // remove o último atributo dentro do array
-animais.shift(); // remove o primeiro atributo do array
-animais.splice(3); //remove um atributo de qualquer lugar
-console.log('Animal 2: ', animais[1]);
-console.log('Animal 4: ', animais[3]);
+for (let i = 0; i < animais.length; i++) {
+    console.log(`Animal ${i}`, animais[i]);
+}
+
+//------------------------------------------------------------------
+console.log('\nshift() -> remove o primeiro atributo do array');  // remove o primeiro atributo do array
+
+animais.push('arara');
+animais.shift();
+for(let i = 0; i < animais.length; i++) {
+    console.log(`Animal ${i}`, animais[i]);
+}
+
+//------------------------------------------------------------------
+console.log('\nsplice() -> remove um atributo de qualquer lugar'); // remove um atributo de qualquer lugar
+
+animais.splice(2);
+for(let i = 0; i < animais.length; i++) {
+    console.log(`Animal ${i}`, animais[i]);
+}
